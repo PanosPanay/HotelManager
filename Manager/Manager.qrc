@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="Manager">
+    <file>Resources/workbg.jpg</file>
+    <file>Resources/login.jpg</file>
+    <file>Resources/background1.jpg</file>
+  </qresource>
+</RCC>
