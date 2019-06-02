@@ -178,7 +178,7 @@ public:
         tableReport = new QTableWidget(page2);
         tableReport->setObjectName(QString::fromUtf8("tableReport"));
         tableReport->setGeometry(QRect(290, 50, 941, 621));
-        tableReport->setStyleSheet(QString::fromUtf8("#tableReport{background-color:rgba(255, 255, 255, 60%);}"));
+        tableReport->setStyleSheet(QString::fromUtf8("#tableReport{background-color:rgba(255, 255, 255, 80%);}"));
         labelShowReport = new QLabel(page2);
         labelShowReport->setObjectName(QString::fromUtf8("labelShowReport"));
         labelShowReport->setGeometry(QRect(290, 10, 941, 41));

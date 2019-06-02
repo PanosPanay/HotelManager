@@ -382,7 +382,7 @@
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">#tableReport{background-color:rgba(255, 255, 255, 60%);}</string>
+         <string notr="true">#tableReport{background-color:rgba(255, 255, 255, 80%);}</string>
         </property>
        </widget>
        <widget class="QLabel" name="labelShowReport">

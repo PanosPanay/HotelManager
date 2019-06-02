@@ -206,14 +206,7 @@ int Manager::ClickedOnBtnReportQuery()	//点击查阅报表按钮
 			queryUrl += QString::number(reportType);
 			queryUrl += "/";
 			queryUrl += QString::number(queryDate);
-
-			//url末尾添加query参数
-			/*queryUrl += "?RoomID=";
-			queryUrl += checkBoxList.at(i)->text();
-			queryUrl += "&TypeReport=";
-			queryUrl += QString::number(reportType);
-			queryUrl += "&date=";
-			queryUrl += QString::number(queryDate);*/
+			//queryUrl += "345";
 
 			ui.statusBar->showMessage(queryUrl, 3000);	//状态栏显示当前发送的url
 
@@ -368,7 +361,7 @@ int Manager::finishedReply(QNetworkReply *reply)	//处理通信返回的报表信息
 				{
 					//取出key为TotalFee的值
 					QJsonValue value = rootObj.value("TotalFee");
-					int totalFee = value.toInt();
+					double totalFee = value.toDouble();
 					QString strTotalFee = QString::number(totalFee);
 					ui.tableReport->setItem(roomRow, 3, new QTableWidgetItem(strTotalFee));
 				}
